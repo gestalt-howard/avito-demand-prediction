@@ -5,13 +5,13 @@
 ![avito logo](https://github.com/gestalt-howard/avito-demand-prediction/blob/master/images/logo-avito.png)
 
 ## Project Overview:
-The 2018 Avito Demand Predictio Kaggle Challenge was hosted by Avito, the Russian version of "Craigslist". In this challenge, Avito wanted Kagglers to predict how successful any particular ad listing would be based on criteria such as ad description, time of posting, image quality, ad title, and more. By doing this, Avito hopes to provide a better service to their customers by forecasting the demand of a posted product. The competition homepage can be found here: https://www.kaggle.com/c/avito-demand-prediction.
+The 2018 Avito Demand Prediction Kaggle Challenge was hosted by Avito, the Russian version of "Craigslist". In this challenge, Avito wanted Kagglers to predict how successful any particular ad listing would be based on criteria such as ad description, time of posting, image quality, ad title, and more. By doing this, Avito hopes to provide a better service to their customers by forecasting the demand of a posted product. The competition homepage can be found here: https://www.kaggle.com/c/avito-demand-prediction.
 
 My final ranking was 563rd place out of 1917, **in the top 30%**. The following sections contain a detailed description of the files in this repo along with the approaches I tried throughout the course of this competition.
 
 ## File Descriptions:
 
-* **sample_submission.csv**: An sample submission file that details the template of a submission
+* **sample_submission.csv**: A sample submission file that demonstrates the proper template of this Kaggle competition's submission
 
 ### Data Folder:
 Please note that due to Github's file size restrictions, I couldn't upload any of Avito's datasets. To replicate my results, please go to the Avito challenge's website (provided above), download the **train.csv.zip** and **test.csv.zip** files, unzip both files, and place them into the ***data*** directory.
@@ -25,7 +25,7 @@ The scripts folder contains notebooks that detail my data exploration and model 
 * *Stage 1*: Data pipeline experimentation using multiple configurations of Light GBM
 * *Stage 2*: Inclusion of additional features and final project stage
 
-If you'd like to retrace my steps, I recommend running through the notebooks in the following order:
+If you'd like to retrace my steps, I recommend running through the notebooks in the following sequence:
 
 1. **parameters_json_gen.ipynb**: Generates a JSON file containing all the folder and file paths necessary for the data exploration and machine learning models to run
 2. **Stage_0_Data_Exploration**: Running through this notebook will provide foundational insights into the datasets and also generate the Stage 0 and Stage 1 preprocessed training and test datasets
