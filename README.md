@@ -7,7 +7,7 @@
 ## Project Overview:
 The 2018 Avito Demand Predictio Kaggle Challenge was hosted by Avito, the Russian version of "Craigslist". In this challenge, Avito wanted Kagglers to predict how successful any particular ad listing would be based on criteria such as ad description, time of posting, image quality, ad title, and more. By doing this, Avito hopes to provide a better service to their customers by forecasting the demand of a posted product. The competition homepage can be found here: https://www.kaggle.com/c/avito-demand-prediction.
 
-Ultimately, I ended up ranking **563rd place out of 1917**. A description of the files in this repo along with the approaches I tried in this competition is below.
+My final ranking was 563rd place out of 1917, **in the top 30%**. The following sections contain a detailed description of the files in this repo along with the approaches I tried throughout the course of this competition.
 
 ## File Descriptions:
 
@@ -27,7 +27,13 @@ The scripts folder contains notebooks that detail my data exploration and model 
 
 If you'd like to retrace my steps, I recommend running through the notebooks in the following order:
 
-1. **parameters_json_gen.ipynb**: 
+1. **parameters_json_gen.ipynb**: Generates a JSON file containing all the folder and file paths necessary for the data exploration and machine learning models to run
+2. **Stage_0_Data_Exploration**: Running through this notebook will provide foundational insights into the datasets and also generate the Stage 0 and Stage 1 preprocessed training and test datasets
+3. **All Other Scripts**: After the previous two notebooks have been run, you can run any other of the other notebooks in any desired order *(each notebook contains a high-level introduction of the model's function)*
 
-## Project Approach:
-The project kick-off was an exhaustive feature analysis and preprocessing script contained in ***Stage_0_Data_Exploration.ipynb***. In this notebook, I explored statistical characteristics of all the given features
+## Approach and Methods:
+My first step in this project was performing an exhaustive feature analysis and preprocessing (contained in the ***Stage_0_Data_Exploration.ipynb*** script). In this notebook, I explored statistical characteristics of all features given in the **train.csv** and **test.csv** datasets provided by Avito. My focus at this stage was to keep my dataset as lightweight as possible to enable rapid model prototyping. By performing detailed data analysis first, I was able to streamline my feature-selection process to create a relatively small preprocessed dataset.
+
+One of the most fascinating results of this preliminary data analysis is shown in the figure below:
+
+![deal probability artifact]()
