@@ -31,9 +31,19 @@ If you'd like to retrace my steps, I recommend running through the notebooks in 
 2. **Stage_0_Data_Exploration**: Running through this notebook will provide foundational insights into the datasets and also generate the Stage 0 and Stage 1 preprocessed training and test datasets
 3. **All Other Scripts**: After the previous two notebooks have been run, you can run any other of the other notebooks in any desired order *(each notebook contains a high-level introduction of the model's function)*
 
-## Approach and Methods:
+## Approach, Methods, and Findings:
+### Stage 0:
 My first step in this project was performing an exhaustive feature analysis and preprocessing (contained in the ***Stage_0_Data_Exploration.ipynb*** script). In this notebook, I explored statistical characteristics of all features given in the **train.csv** and **test.csv** datasets provided by Avito. My focus at this stage was to keep my dataset as lightweight as possible to enable rapid model prototyping. By performing detailed data analysis first, I was able to streamline my feature-selection process to create a relatively small preprocessed dataset.
 
 One of the most fascinating results of this preliminary data analysis is shown in the figure below:
 
 ![deal probability artifact](https://github.com/gestalt-howard/avito-demand-prediction/blob/master/images/deal_prob_artifact.png)
+
+After de-noising the deal probability feature *(aka the target variable)* by thresholding the counts of feature occurrences, it can be seen that there appear to be two general clusters of deal probabilities (one to the left of 0.6 and one to the right). In Stage 1 of this project, I explore the relevancy of this behavior.
+
+Following the initial data visualization, I ran a Light GBM regression model to procure my first leaderboard scores. Conveniently, the Light GBM API also included a functionality for determining the most important features from the training dataset. These "most-important" features are visualized below:
+
+![stage 0 important features]()
+
+### Stage 1:
+To improve upon the preliminary Stage 0 efforts, I decided to try and optimize
