@@ -36,4 +36,4 @@ My first step in this project was performing an exhaustive feature analysis and 
 
 One of the most fascinating results of this preliminary data analysis is shown in the figure below:
 
-![deal probability artifact]()
+![deal probability artifact](https://github.com/gestalt-howard/avito-demand-prediction/blob/master/images/deal_prob_artifact.png)
